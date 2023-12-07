@@ -20,6 +20,18 @@ const newUserSchema = mongoose.Schema(
       type: String,
       required: true,
     },
+    profilePicture: {
+      type: String,
+    },
+    posts: {
+      type: Array,
+    },
+    following: {
+      type: Array
+    },
+    followers: {
+      type: Array
+    },
     admin: Boolean,
   },
   {

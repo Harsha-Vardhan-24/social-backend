@@ -7,8 +7,6 @@ const {
   userLogin,
 } = require("../database/databaseSchema");
 
-connectToDB();
-
 router.get("/", (req, res) => {
   res.send("This is a user authentication page");
 });
