@@ -22,9 +22,11 @@ connectToDB();
 // Accessing the files/routers.
 const authentication = require("./routes/authentication");
 const fileUpload = require("./routes/fileUpload");
+const getPosts = require("./routes/getPosts");
 
 app.use("/authentication", authentication);
 app.use("/file-upload", fileUpload);
+app.use("/get-posts", getPosts);
 
 app.listen(PORT, (err) => {
   if (!err) {
